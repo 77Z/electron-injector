@@ -1,0 +1,76 @@
+* {
+    color: white;
+}
+
+.top {
+    position: fixed;
+    top: 3px;
+    left: 0;
+    width: 100%;
+    height: 26px;
+    background: #222222;
+    -webkit-app-region: drag;
+    z-index: 9997;
+    transition: 0.3s;
+}
+
+.grab-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 3px;
+    background: #222222;
+    left: 0;
+    z-index: 9998;
+    -webkit-app-region: no-drag;
+    transition: 0.3s;
+}
+
+.woodmark {
+    height: 100%;
+}
+
+
+.nav-icon {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 29px;
+    width: 48px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: 0.2s;
+    -webkit-app-region: no-drag;
+    z-index: 9999;
+}
+
+.nav-icon:hover {
+    background: #ffffff50;
+}
+
+.close-nav-btn:hover {
+    background: red;
+}
+
+.min-max-nav-btn {
+    right: 48px;
+}
+
+.min-nav-btn {
+    right: 96px;
+}
+
+.title {
+    font-family: 'Google Sans';
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: white;
+}
+
+.content {
+    margin-top: 29px;
+}

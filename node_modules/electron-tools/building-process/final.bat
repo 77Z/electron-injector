@@ -1,0 +1,1 @@
+echo TODO: copy the bin to the main folder

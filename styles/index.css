@@ -1,0 +1,116 @@
+.package-check {
+    position: fixed;
+    background: #0c0c0c;
+    bottom: 0;
+    height: calc(100% - 29px);
+    width: 100%;
+    z-index: 500;
+    left: 0;
+    text-align: center;
+    display: none;
+}
+
+.bug svg {
+    height: 30%;
+    width: 30%;
+}
+
+.package-check h1 {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Google Sans', sans-serif;
+    font-weight: 900;
+    user-select: none;
+}
+
+.package-check p {
+    font-family: sans-serif;
+    user-select: none;
+}
+
+code {
+    user-select: text;
+}
+
+::selection {
+    background: #ff4500;
+}
+
+.file-ex {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 25%;
+    height: calc(100% - 29px);
+    background: #0c0c0c;
+}
+
+.codemirror-container {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: calc(100% - 29px);
+    background: #000000;
+    width: 75%;
+}
+
+.CodeMirror {
+    font-size: 17px;
+    height: 100%;
+}
+
+.CodeMirror-hints {
+    background: #000000;
+    border: none;
+    border-radius: 0px;
+}
+
+.CodeMirror-hint {
+    color: #ffffff;
+    font-size: 17px;
+}
+
+li.CodeMirror-hint-active {
+    border-radius: 0px;
+}
+
+.CodeMirror-hints::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: #151b1f;
+    border: 5px solid #263238;
+    border-radius: 1000px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cecece; 
+    border: 6px solid #263238;
+    border-radius: 1000px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.CodeMirror-lint-tooltip {
+    z-index: 9999;
+    background: #000000b3;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 15px;
+    font-family: sans-serif;
+} 
+
+.CodeMirror-lint-marker-warning {
+    background: url(../img/jshint/wrn.png);
+}
+
+.CodeMirror-lint-marker-error {
+    background: url(../img/jshint/err.png);
+}

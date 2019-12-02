@@ -1,0 +1,39 @@
+{
+  "name": "electron-injector",
+  "version": "1.0.0",
+  "description": "Decompile and Recompile Electron apps",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/77Z/electron-injector.git"
+  },
+  "keywords": [
+    "electron",
+    "injector",
+    "electron-injector",
+    "vince",
+    "richter",
+    "77z"
+  ],
+  "build": {
+    "appId": "tk.a77zsite.tk",
+    "name": "Electron Injector",
+    "description": "Decompile and Recompile Electron apps",
+    "homepage": "https://77zsite.tk/electron-injector"
+  },
+  "author": "Vince Richter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/77Z/electron-injector/issues"
+  },
+  "homepage": "https://github.com/77Z/electron-injector#readme",
+  "dependencies": {
+    "asar": "^2.0.1",
+    "detect-installed": "^2.0.4",
+    "electron-tools": "^2.2.1"
+  }
+}
