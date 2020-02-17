@@ -3,18 +3,19 @@ const asar = require("asar");
 const {ipcRenderer} = require('electron');
 const os = require('os');
 const fs = require("fs");
+const fe = require("../scripts/file_explorer");
 
 var editor;
 var destname = Math.random().toString().split(".")[1];
 
 window.onload = function() {
-    const epkgexists = detectInstalled.sync("electron-builder");
-    if (!epkgexists) {
-        console.error("Electron builder is not installed! showing dialog...");
-        document.getElementById("package-check").style.display = "block";
-    } else {
-        console.log("Electron builder is installed");
-    }
+    //const epkgexists = detectInstalled.sync("electron-builder");
+    //if (!epkgexists) {
+    //    console.error("Electron builder is not installed! showing dialog...");
+    //    document.getElementById("package-check").style.display = "block";
+    //} else {
+    //    console.log("Electron builder is installed");
+    //}
 
 
     editor = CodeMirror.fromTextArea(document.getElementById("codemirror-area"), {
@@ -38,6 +39,8 @@ window.onload = function() {
                 CodeMirror.commands.autocomplete(cm, null, {completeSingle: false});
             }
     });
+
+    fe.scanDir("C:\\Users\\r2d2f\\OneDrive\\Documents\\projects", document.getElementById("file-ex"));
 };
 
 
